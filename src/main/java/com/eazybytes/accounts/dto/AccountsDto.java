@@ -11,4 +11,6 @@ public class AccountsDto {
     private String accountType;
 
     private String branchAddress;
+
+    //new value added.
 }
