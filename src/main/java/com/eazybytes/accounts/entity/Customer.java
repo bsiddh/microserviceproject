@@ -17,14 +17,12 @@ public class Customer  extends  BaseEntity{
     @Column(name="customer_id")
 private Long customerId;
 
-    @Column(name="name")
 private String name;
 
-    @Column(name="email")
 private String email;
 
     @Column(name="mobile_number")
-private String mobileNumber;
+    private String mobileNumber;
 
 
 
