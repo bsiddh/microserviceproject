@@ -67,7 +67,7 @@ public class AccountsServiceImpl implements IAccountService {
 
     @Override
     public CustomerDto fetchAccount(String mobileNumber) {
-      Customer customer =  customerRepository.findByMobileNumber(mobileNumber).orElseThrow(
+      Customer customer =  customerRepository.findByMobileNumber(mobileNumber.trim()).orElseThrow(
                 ()->new ResourceNotFoundException("Customer","mobileNumber",mobileNumber)
         );
         Accounts accounts =  accountsRepository.findByCustomerId(customer.getCustomerId()).orElseThrow(

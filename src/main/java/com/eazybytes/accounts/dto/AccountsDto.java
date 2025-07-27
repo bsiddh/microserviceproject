@@ -12,5 +12,4 @@ public class AccountsDto {
 
     private String branchAddress;
 
-    //new value added.
 }
